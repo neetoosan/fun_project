@@ -1,7 +1,7 @@
 {
-  "name": "A Special Quest for Ozioma 💖",
-  "short_name": "For Ozioma 💖",
-  "description": "An interactive 3D love game and daily love notes for Ozioma Goodness Ezenyi",
+  "name": "A Special Quest for Praise 💖",
+  "short_name": "For Praise 💖",
+  "description": "An interactive 3D love game and daily love notes for Praise",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f051d",

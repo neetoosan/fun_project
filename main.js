@@ -1,15 +1,15 @@
 /**
- * Main 3D Game Engine for Ozioma Goodness Ezenyi's Love Website
+ * Main 3D Game Engine for Praise's Love Website
  * Emotion-Driven Dynamic Experience + Daily Rotating Quotes + Push Notifications
  * Works globally with THREE.js, soundEngine, DAILY_QUOTES_ENGINE, and loveNotificationManager
  */
 
 // ============================================================================
-// Personalization Configuration for Ozioma Goodness Ezenyi
+// Personalization Configuration for Praise
 // ============================================================================
 const CONFIG = {
-  crushFullName: "Ozioma Goodness Ezenyi",
-  crushName: "Ozioma",
+  crushFullName: "Praise",
+  crushName: "Praise",
   whatsappNumber: "2348061618700",
   moods: {
     // 💖 1. ROMANTIC & DREAMY
@@ -24,11 +24,11 @@ const CONFIG = {
       particleColor: 0xff75a0,
       particleSize: 0.45,
       letter: {
-        p1: "Ozioma Goodness Ezenyi, my love for you runs deeper than the oceans and higher than all the stars in this sky.",
+        p1: "Praise, my love for you runs deeper than the oceans and higher than all the stars in this sky.",
         p2: "You are the poetry in my thoughts and the gentle rhythm in my heartbeat. Walking through life with you by my side would be my greatest blessing.",
-        highlight: "Will you make me the happiest person in the universe and be mine forever, Ozioma? 💖"
+        highlight: "Will you make me the happiest person in the universe and be mine forever, Praise? 💖"
       },
-      whatsappMessage: "Hey! 💖 I just finished your 3D Quest and found all 5 hearts! My mood today is Romantic & Dreamy ✨ And my answer is YES! Forever & always! 🥰 — Ozioma Goodness"
+      whatsappMessage: "Hey! 💖 I just finished your 3D Quest and found all 5 hearts! My mood today is Romantic & Dreamy ✨ And my answer is YES! Forever & always! 🥰 — Praise"
     },
 
     // 🌸 2. STRESSED / NEEDS COMFORT & WARMTH
@@ -43,11 +43,11 @@ const CONFIG = {
       particleColor: 0xffc4a8,
       particleSize: 0.5,
       letter: {
-        p1: "Ozioma Goodness Ezenyi, you work so hard and give so much love to the world, but today I want you to feel deeply cherished.",
+        p1: "Praise, you work so hard and give so much love to the world, but today I want you to feel deeply cherished.",
         p2: "I want to be the one who brings you peace after a long day, the one who listens to your quietest thoughts, and holds your hand through everything.",
-        highlight: "Will you let me love, protect, and stand by your side forever, Ozioma? 🌸"
+        highlight: "Will you let me love, protect, and stand by your side forever, Praise? 🌸"
       },
-      whatsappMessage: "Hey! 🌸 I just finished your 3D Quest and found all 5 hearts! I was feeling a bit stressed/needed comfort, and your messages warmed my heart so much. My answer is YES! 🤍 — Ozioma"
+      whatsappMessage: "Hey! 🌸 I just finished your 3D Quest and found all 5 hearts! I was feeling a bit stressed/needed comfort, and your messages warmed my heart so much. My answer is YES! 🤍 — Praise"
     },
 
     // 🌟 3. JOYFUL & ENERGETIC
@@ -62,11 +62,11 @@ const CONFIG = {
       particleColor: 0xffd700,
       particleSize: 0.45,
       letter: {
-        p1: "Ozioma, every single moment with you feels like an exciting adventure filled with pure sunshine!",
-        p2: "Your joyful laugh is my favorite melody, and your happiness means everything to me. I want to celebrate you every single day, Goodness.",
-        highlight: "Let's make countless magical memories together. Will you be mine forever, Ozioma? 🌟"
+        p1: "Praise, every single moment with you feels like an exciting adventure filled with pure sunshine!",
+        p2: "Your joyful laugh is my favorite melody, and your happiness means everything to me. I want to celebrate you every single day, Praise.",
+        highlight: "Let's make countless magical memories together. Will you be mine forever, Praise? 🌟"
       },
-      whatsappMessage: "Hey! 🌟 I just completed your 3D Quest! I'm feeling super joyful & energetic today! Loved every single reason, and my answer is YES! ✨💖 — Ozioma Goodness Ezenyi"
+      whatsappMessage: "Hey! 🌟 I just completed your 3D Quest! I'm feeling super joyful & energetic today! Loved every single reason, and my answer is YES! ✨💖 — Praise"
     },
 
     // 😜 4. PLAYFUL & MISCHIEVOUS
@@ -81,11 +81,11 @@ const CONFIG = {
       particleColor: 0xff3df2,
       particleSize: 0.5,
       letter: {
-        p1: "Ozioma Goodness Ezenyi, you've completely conquered my thoughts, and honestly, I wouldn't have it any other way!",
-        p2: "You bring so much fun, color, and laughter into my world. There's no escaping this—we're an unbeatable team, Ozi.",
-        highlight: "Resistance is futile, Ozioma! Will you say YES and be my partner-in-crime forever? 😜💖"
+        p1: "Praise, you've completely conquered my thoughts, and honestly, I wouldn't have it any other way!",
+        p2: "You bring so much fun, color, and laughter into my world. There's no escaping this—we're an unbeatable team, Praise.",
+        highlight: "Resistance is futile, Praise! Will you say YES and be my partner-in-crime forever? 😜💖"
       },
-      whatsappMessage: "Hey! 😜 I just finished your 3D Quest and caught all 5 hearts! You're the real heart stealer here haha! My answer is YES! Partner in crime forever! 🎉💖 — Ozioma"
+      whatsappMessage: "Hey! 😜 I just finished your 3D Quest and caught all 5 hearts! You're the real heart stealer here haha! My answer is YES! Partner in crime forever! 🎉💖 — Praise"
     }
   }
 };
@@ -868,7 +868,7 @@ function setupEventListeners() {
     noBtn.addEventListener('touchstart', (e) => { e.preventDefault(); dodgeNoBtn(); });
   }
 
-  // YES! Proposal Button Click -> Open WhatsApp with Mood Message for Ozioma
+  // YES! Proposal Button Click -> Open WhatsApp with Mood Message for Praise
   const yesBtn = document.getElementById('yes-btn');
   if (yesBtn) {
     yesBtn.addEventListener('click', () => {
@@ -1094,7 +1094,7 @@ function collectHeart(item) {
     number: `Heart #${item.index + 1}`,
     emoji: "💖",
     heading: "A Beautiful Reason",
-    text: "You make every day brighter, Ozioma!"
+    text: "You make every day brighter, Praise!"
   };
 
   if (reason) {
